@@ -7,7 +7,6 @@
     .testamonial {
         border-radius: 10px;
         padding: 7vw 8vw;
-        background-color: violet;
         margin-bottom: 8vw;
 
         &__header {
@@ -210,6 +209,227 @@
         p:last-child {
             color: rgba($color: $jeanette-kira-grey-2, $alpha: .7);
             line-height: 1.4em;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-up) {
+    .testamonials {
+        display: grid;
+        column-gap: 2vw;
+        row-gap: 2vw;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "daniel     daniel   jonathan  kira"
+            "jeanette   patrick  patrick   kira";
+        flex-direction: unset;
+        justify-content: unset;
+        padding: unset;
+    
+        .testamonial {
+            border-radius: 10px;
+            padding: 2vw 2.5vw;
+            margin-bottom: unset;
+    
+            &__header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1vw;
+            }
+    
+            &__header>.image {
+                margin-right: 1.4vw;
+    
+                img {
+                    border-radius: 100%;
+                    width: 2.1vw;
+                }
+            }
+    
+            &__header>.identity {
+                p:first-child {
+                    font-size: 1vw;
+                    font-weight: 600;
+                }
+    
+                p:last-child {
+                    font-size: .85vw;
+                }
+            }
+    
+            &__content {
+                p:first-child {
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 1.3vw;
+                    /* line-height: 1.7vw; */
+                    line-height: 1.7vw;
+                    margin-bottom: 1vw;
+                }
+    
+                p:last-child {
+                    font-size: .85vw
+                }
+            }
+        }
+
+        #daniel {
+            grid-area: daniel;
+        
+            .bg-quotation {
+                top: 0;
+                right: 6vw;
+            }
+
+            .testamonial__header img {
+                border: 1px solid $daniel-violet;
+            }
+        
+            .testamonial__header .identity {
+                p:first-child {
+                    color: $daniel-violet;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $daniel-violet, $alpha: .5);
+                }
+            }
+
+            .testamonial__content {
+                p:first-child {
+                    color: $daniel-violet-2;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $daniel-violet, $alpha: .7);
+                    line-height: 1.4em;
+                }
+            }
+        }
+        
+        #jonathan {
+            grid-area: jonathan;
+            position: relative;
+            background-color: $jonathan-bg-grey;
+            z-index: 0;
+        
+            .testamonial__header img {
+                border: 1px solid $daniel-violet;
+            }
+        
+            .testamonial__header .identity {
+                p:first-child {
+                    color: $jonathan-grey;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $jonathan-grey, $alpha: .5);
+                }
+            }
+            .testamonial__content {
+                p:first-child {
+                    color: $jonathan-grey-2;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $jonathan-grey-2, $alpha: .7);
+                    line-height: 1.4em;
+                }
+            }
+        }
+        
+        #jeanette {
+            grid-area: jeanette;
+            position: relative;
+            background-color: $white;
+            z-index: 0;
+        
+            .testamonial__header img {
+                border: 1px solid $white;
+            }
+        
+            .testamonial__header .identity {
+                p:first-child {
+                    color: $jeanette-kira-grey;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $jeanette-kira-grey, $alpha: .5);
+                }
+            }
+            .testamonial__content {
+                p:first-child {
+                    color: $jeanette-kira-grey-2;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $jeanette-kira-grey-2, $alpha: .7);
+                    line-height: 1.4em;
+                }
+            }
+        }
+        
+        #patrick {
+            grid-area: patrick;
+            position: relative;
+            background-color: #000;
+            z-index: 0;
+        
+            .testamonial__header img {
+                border: 1px solid $moderate-violet;
+            }
+        
+            .testamonial__header .identity {
+                p:first-child {
+                    color: $patrick-grey;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $patrick-grey, $alpha: .5);
+                }
+            }
+            .testamonial__content {
+                p:first-child {
+                    color: $patrick-grey-2;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $patrick-grey-2, $alpha: .7);
+                    line-height: 1.4em;
+                }
+            }
+        }
+        
+        #kira {
+            grid-area: kira;
+            position: relative;
+            background-color: $white;
+            z-index: 0;
+        
+            .testamonial__header img {
+                border: 1px solid $white;
+            }
+        
+            .testamonial__header .identity {
+                p:first-child {
+                    color: $jeanette-kira-grey;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $jeanette-kira-grey, $alpha: .5);
+                }
+            }
+            .testamonial__content {
+                p:first-child {
+                    color: $jeanette-kira-grey-2;
+                }
+        
+                p:last-child {
+                    color: rgba($color: $jeanette-kira-grey-2, $alpha: .7);
+                    line-height: 1.4em;
+                }
+            }
         }
     }
 }

@@ -42,6 +42,21 @@ select:focus {
   outline: none;
 }
 
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 11vw 12vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 /* Colors */
 /* Layout */
 @media screen and (max-width: 1439px) {
@@ -73,7 +88,6 @@ select:focus {
 .testamonials .testamonial {
   border-radius: 10px;
   padding: 7vw 8vw;
-  background-color: violet;
   margin-bottom: 8vw;
 }
 
@@ -262,5 +276,191 @@ select:focus {
 #kira .testamonial__content p:last-child {
   color: rgba(78, 86, 98, 0.7);
   line-height: 1.4em;
+}
+
+@media screen and (min-width: 1440px) {
+  .testamonials {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 2vw;
+            column-gap: 2vw;
+    row-gap: 2vw;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "daniel     daniel   jonathan  kira" "jeanette   patrick  patrick   kira";
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    padding: unset;
+  }
+  .testamonials .testamonial {
+    border-radius: 10px;
+    padding: 2vw 2.5vw;
+    margin-bottom: unset;
+  }
+  .testamonials .testamonial__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1vw;
+  }
+  .testamonials .testamonial__header > .image {
+    margin-right: 1.4vw;
+  }
+  .testamonials .testamonial__header > .image img {
+    border-radius: 100%;
+    width: 2.1vw;
+  }
+  .testamonials .testamonial__header > .identity p:first-child {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  .testamonials .testamonial__header > .identity p:last-child {
+    font-size: .85vw;
+  }
+  .testamonials .testamonial__content p:first-child {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3vw;
+    /* line-height: 1.7vw; */
+    line-height: 1.7vw;
+    margin-bottom: 1vw;
+  }
+  .testamonials .testamonial__content p:last-child {
+    font-size: .85vw;
+  }
+  .testamonials #daniel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: daniel;
+  }
+  .testamonials #daniel .bg-quotation {
+    top: 0;
+    right: 6vw;
+  }
+  .testamonials #daniel .testamonial__header img {
+    border: 1px solid #eed4f8;
+  }
+  .testamonials #daniel .testamonial__header .identity p:first-child {
+    color: #eed4f8;
+  }
+  .testamonials #daniel .testamonial__header .identity p:last-child {
+    color: rgba(238, 212, 248, 0.5);
+  }
+  .testamonials #daniel .testamonial__content p:first-child {
+    color: #f0d6fa;
+  }
+  .testamonials #daniel .testamonial__content p:last-child {
+    color: rgba(238, 212, 248, 0.7);
+    line-height: 1.4em;
+  }
+  .testamonials #jonathan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: jonathan;
+    position: relative;
+    background-color: #49556b;
+    z-index: 0;
+  }
+  .testamonials #jonathan .testamonial__header img {
+    border: 1px solid #eed4f8;
+  }
+  .testamonials #jonathan .testamonial__header .identity p:first-child {
+    color: #e3e9f2;
+  }
+  .testamonials #jonathan .testamonial__header .identity p:last-child {
+    color: rgba(227, 233, 242, 0.5);
+  }
+  .testamonials #jonathan .testamonial__content p:first-child {
+    color: #faffff;
+  }
+  .testamonials #jonathan .testamonial__content p:last-child {
+    color: rgba(250, 255, 255, 0.7);
+    line-height: 1.4em;
+  }
+  .testamonials #jeanette {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: jeanette;
+    position: relative;
+    background-color: white;
+    z-index: 0;
+  }
+  .testamonials #jeanette .testamonial__header img {
+    border: 1px solid white;
+  }
+  .testamonials #jeanette .testamonial__header .identity p:first-child {
+    color: #696D70;
+  }
+  .testamonials #jeanette .testamonial__header .identity p:last-child {
+    color: rgba(105, 109, 112, 0.5);
+  }
+  .testamonials #jeanette .testamonial__content p:first-child {
+    color: #4E5662;
+  }
+  .testamonials #jeanette .testamonial__content p:last-child {
+    color: rgba(78, 86, 98, 0.7);
+    line-height: 1.4em;
+  }
+  .testamonials #patrick {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: patrick;
+    position: relative;
+    background-color: #000;
+    z-index: 0;
+  }
+  .testamonials #patrick .testamonial__header img {
+    border: 1px solid #7541c8;
+  }
+  .testamonials #patrick .testamonial__header .identity p:first-child {
+    color: #DDE1EB;
+  }
+  .testamonials #patrick .testamonial__header .identity p:last-child {
+    color: rgba(221, 225, 235, 0.5);
+  }
+  .testamonials #patrick .testamonial__content p:first-child {
+    color: #E8EFF9;
+  }
+  .testamonials #patrick .testamonial__content p:last-child {
+    color: rgba(232, 239, 249, 0.7);
+    line-height: 1.4em;
+  }
+  .testamonials #kira {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: kira;
+    position: relative;
+    background-color: white;
+    z-index: 0;
+  }
+  .testamonials #kira .testamonial__header img {
+    border: 1px solid white;
+  }
+  .testamonials #kira .testamonial__header .identity p:first-child {
+    color: #696D70;
+  }
+  .testamonials #kira .testamonial__header .identity p:last-child {
+    color: rgba(105, 109, 112, 0.5);
+  }
+  .testamonials #kira .testamonial__content p:first-child {
+    color: #4E5662;
+  }
+  .testamonials #kira .testamonial__content p:last-child {
+    color: rgba(78, 86, 98, 0.7);
+    line-height: 1.4em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

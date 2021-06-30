@@ -16,7 +16,6 @@ body {
     font-family: $barlow-semi-condensed;
     position: relative;
     background-color: $light-grayish-blue;
-
 }
 
 li {
@@ -37,4 +36,13 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
+}
+
+@media screen and (min-width: $desktop-up) {
+    body {
+        padding: 11vw 12vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
