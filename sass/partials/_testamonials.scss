@@ -1,0 +1,215 @@
+.testamonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(5.77em, 20vw, 11.81em) clamp(1.73em, 6vw, 4.72em);
+
+    .testamonial {
+        border-radius: 10px;
+        padding: 7vw 8vw;
+        background-color: violet;
+        margin-bottom: 8vw;
+
+        &__header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4vw;
+        }
+
+        &__header>.image {
+            margin-right: clamp(1.153em, 4vw, 3.15em);
+
+            img {
+                border-radius: 100%;
+                width: 9vw;
+            }
+        }
+
+        &__header>.identity {
+            p:first-child {
+                font-size: 3.6vw;
+                font-weight: 600;
+            }
+
+            p:last-child {
+                font-size: 3.05vw;
+            }
+        }
+
+        &__content {
+            p:first-child {
+                color: $white;
+                font-weight: 600;
+                font-size: 5.5vw;
+                margin-bottom: 5vw;
+            }
+
+            p:last-child {
+                font-size: clamp(1.125em, 3.9vw, 1.49em);
+            }
+        }
+    }
+}
+
+#daniel {
+    position: relative;
+    background-color: $moderate-violet;
+    z-index: 0;
+
+    .bg-quotation {
+        top: 0;
+        right: 6vw;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .testamonial__header,
+    .testamonial__content {
+        position: relative;
+        z-index: 5;
+    }
+
+    .testamonial__header img {
+        border: 2px solid $daniel-violet;
+    }
+
+    .testamonial__header .identity {
+        p:first-child {
+            color: $daniel-violet;
+        }
+
+        p:last-child {
+            color: rgba($color: $daniel-violet, $alpha: .5);
+        }
+    }
+    .testamonial__content {
+        p:first-child {
+            color: $daniel-violet-2;
+        }
+
+        p:last-child {
+            color: rgba($color: $daniel-violet, $alpha: .7);
+            line-height: 1.4em;
+        }
+    }
+}
+
+#jonathan {
+    position: relative;
+    background-color: $jonathan-bg-grey;
+    z-index: 0;
+
+    .testamonial__header img {
+        border: 2px solid $daniel-violet;
+    }
+
+    .testamonial__header .identity {
+        p:first-child {
+            color: $jonathan-grey;
+        }
+
+        p:last-child {
+            color: rgba($color: $jonathan-grey, $alpha: .5);
+        }
+    }
+    .testamonial__content {
+        p:first-child {
+            color: $jonathan-grey-2;
+        }
+
+        p:last-child {
+            color: rgba($color: $jonathan-grey-2, $alpha: .7);
+            line-height: 1.4em;
+        }
+    }
+}
+
+#jeanette {
+    position: relative;
+    background-color: $white;
+    z-index: 0;
+
+    .testamonial__header img {
+        border: 2px solid $white;
+    }
+
+    .testamonial__header .identity {
+        p:first-child {
+            color: $jeanette-kira-grey;
+        }
+
+        p:last-child {
+            color: rgba($color: $jeanette-kira-grey, $alpha: .5);
+        }
+    }
+    .testamonial__content {
+        p:first-child {
+            color: $jeanette-kira-grey-2;
+        }
+
+        p:last-child {
+            color: rgba($color: $jeanette-kira-grey-2, $alpha: .7);
+            line-height: 1.4em;
+        }
+    }
+}
+
+#patrick {
+    position: relative;
+    background-color: #000;
+    z-index: 0;
+
+    .testamonial__header img {
+        border: 2px solid $moderate-violet;
+    }
+
+    .testamonial__header .identity {
+        p:first-child {
+            color: $patrick-grey;
+        }
+
+        p:last-child {
+            color: rgba($color: $patrick-grey, $alpha: .5);
+        }
+    }
+    .testamonial__content {
+        p:first-child {
+            color: $patrick-grey-2;
+        }
+
+        p:last-child {
+            color: rgba($color: $patrick-grey-2, $alpha: .7);
+            line-height: 1.4em;
+        }
+    }
+}
+
+#kira {
+    position: relative;
+    background-color: $white;
+    z-index: 0;
+
+    .testamonial__header img {
+        border: 2px solid $white;
+    }
+
+    .testamonial__header .identity {
+        p:first-child {
+            color: $jeanette-kira-grey;
+        }
+
+        p:last-child {
+            color: rgba($color: $jeanette-kira-grey, $alpha: .5);
+        }
+    }
+    .testamonial__content {
+        p:first-child {
+            color: $jeanette-kira-grey-2;
+        }
+
+        p:last-child {
+            color: rgba($color: $jeanette-kira-grey-2, $alpha: .7);
+            line-height: 1.4em;
+        }
+    }
+}

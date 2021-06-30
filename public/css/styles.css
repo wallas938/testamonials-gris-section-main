@@ -1,0 +1,266 @@
+/* Colors */
+/* Layout */
+/* Colors */
+/* FONTS */
+/* FONTS */
+/* Colors */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  position: relative;
+  background-color: #ecf2f8;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Colors */
+/* Layout */
+@media screen and (max-width: 1439px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.testamonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: clamp(5.77em, 20vw, 11.81em) clamp(1.73em, 6vw, 4.72em);
+}
+
+.testamonials .testamonial {
+  border-radius: 10px;
+  padding: 7vw 8vw;
+  background-color: violet;
+  margin-bottom: 8vw;
+}
+
+.testamonials .testamonial__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4vw;
+}
+
+.testamonials .testamonial__header > .image {
+  margin-right: clamp(1.153em, 4vw, 3.15em);
+}
+
+.testamonials .testamonial__header > .image img {
+  border-radius: 100%;
+  width: 9vw;
+}
+
+.testamonials .testamonial__header > .identity p:first-child {
+  font-size: 3.6vw;
+  font-weight: 600;
+}
+
+.testamonials .testamonial__header > .identity p:last-child {
+  font-size: 3.05vw;
+}
+
+.testamonials .testamonial__content p:first-child {
+  color: white;
+  font-weight: 600;
+  font-size: 5.5vw;
+  margin-bottom: 5vw;
+}
+
+.testamonials .testamonial__content p:last-child {
+  font-size: clamp(1.125em, 3.9vw, 1.49em);
+}
+
+#daniel {
+  position: relative;
+  background-color: #7541c8;
+  z-index: 0;
+}
+
+#daniel .bg-quotation {
+  top: 0;
+  right: 6vw;
+  z-index: 1;
+  position: absolute;
+}
+
+#daniel .testamonial__header,
+#daniel .testamonial__content {
+  position: relative;
+  z-index: 5;
+}
+
+#daniel .testamonial__header img {
+  border: 2px solid #eed4f8;
+}
+
+#daniel .testamonial__header .identity p:first-child {
+  color: #eed4f8;
+}
+
+#daniel .testamonial__header .identity p:last-child {
+  color: rgba(238, 212, 248, 0.5);
+}
+
+#daniel .testamonial__content p:first-child {
+  color: #f0d6fa;
+}
+
+#daniel .testamonial__content p:last-child {
+  color: rgba(238, 212, 248, 0.7);
+  line-height: 1.4em;
+}
+
+#jonathan {
+  position: relative;
+  background-color: #49556b;
+  z-index: 0;
+}
+
+#jonathan .testamonial__header img {
+  border: 2px solid #eed4f8;
+}
+
+#jonathan .testamonial__header .identity p:first-child {
+  color: #e3e9f2;
+}
+
+#jonathan .testamonial__header .identity p:last-child {
+  color: rgba(227, 233, 242, 0.5);
+}
+
+#jonathan .testamonial__content p:first-child {
+  color: #faffff;
+}
+
+#jonathan .testamonial__content p:last-child {
+  color: rgba(250, 255, 255, 0.7);
+  line-height: 1.4em;
+}
+
+#jeanette {
+  position: relative;
+  background-color: white;
+  z-index: 0;
+}
+
+#jeanette .testamonial__header img {
+  border: 2px solid white;
+}
+
+#jeanette .testamonial__header .identity p:first-child {
+  color: #696D70;
+}
+
+#jeanette .testamonial__header .identity p:last-child {
+  color: rgba(105, 109, 112, 0.5);
+}
+
+#jeanette .testamonial__content p:first-child {
+  color: #4E5662;
+}
+
+#jeanette .testamonial__content p:last-child {
+  color: rgba(78, 86, 98, 0.7);
+  line-height: 1.4em;
+}
+
+#patrick {
+  position: relative;
+  background-color: #000;
+  z-index: 0;
+}
+
+#patrick .testamonial__header img {
+  border: 2px solid #7541c8;
+}
+
+#patrick .testamonial__header .identity p:first-child {
+  color: #DDE1EB;
+}
+
+#patrick .testamonial__header .identity p:last-child {
+  color: rgba(221, 225, 235, 0.5);
+}
+
+#patrick .testamonial__content p:first-child {
+  color: #E8EFF9;
+}
+
+#patrick .testamonial__content p:last-child {
+  color: rgba(232, 239, 249, 0.7);
+  line-height: 1.4em;
+}
+
+#kira {
+  position: relative;
+  background-color: white;
+  z-index: 0;
+}
+
+#kira .testamonial__header img {
+  border: 2px solid white;
+}
+
+#kira .testamonial__header .identity p:first-child {
+  color: #696D70;
+}
+
+#kira .testamonial__header .identity p:last-child {
+  color: rgba(105, 109, 112, 0.5);
+}
+
+#kira .testamonial__content p:first-child {
+  color: #4E5662;
+}
+
+#kira .testamonial__content p:last-child {
+  color: rgba(78, 86, 98, 0.7);
+  line-height: 1.4em;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+@import "typo";
+@import "colors";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 13px;
+    font-family: $barlow-semi-condensed;
+    position: relative;
+    background-color: $light-grayish-blue;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
